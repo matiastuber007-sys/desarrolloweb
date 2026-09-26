@@ -1,0 +1,261 @@
+body{
+    background-color:#ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+.texto{
+    background-color:#b9d6e78a;
+    font-size:14px;
+    color:black;
+    font-family:Arial, Helvetica, sans-serif
+
+}
+
+.pie{
+    background-color:#6076f7;
+    font-size:10px;
+    border-radius:5px;
+    border-left:#FCECD8;
+    border-right:#FCECD8;
+    border-style :solid;
+    border-width:0px;
+    width: 80%;
+   
+}
+
+header{
+    background-color: rgb(253, 253, 253);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:35px;
+}
+
+nav{ 
+    background-color: #0025ff94;
+    padding: 0 16px;
+}
+
+nav li a{
+    color: aqua;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    text-decoration: solid;
+    font-weight: bold;
+    padding: 14px 8px;
+
+}
+
+nav ul{
+    display: flex;
+    list-style:none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    align-items: center;
+
+}
+
+nav li a:hover{
+    background-color: #FCECD8;
+    color: #6076f7;
+    border-radius: 15px;
+
+}
+
+.secundario {
+    display: flex;
+    color:#6076f7;
+    flex-direction: row;
+
+}
+
+.secundario aside{
+    background-color: #6076f7;
+    color: #FCECD8;
+    width: 2%;
+    padding: 79px;
+    text-align: left;
+    font-size: 15px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.terciario aside{
+    background-color: #6076f7;
+    color: #FCECD8;
+    width: 2%;
+    padding: 79px;
+    text-align: left;
+    font-size: 15px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.terciario {
+    display: flex;
+    color:#6076f7;
+    flex-direction: row;
+
+}
+
+
+.secundario article{
+    background-color: #6076f7;
+    color: #FCECD8;
+    width: 50%;
+    padding: 70px;
+    text-align: center;
+    font-size: 15px;
+    margin: 10px;
+
+}
+
+.secundario #mapa{
+    background-color: #b9d6e78a;
+    color: #6076f7;
+    width: 50%; 
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.secundario .texto{
+    width: 17%;
+    margin: 10px;
+    padding: 10px;
+    text-align: justify;
+    font-size: 15px;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   
+
+}
+
+footer section{
+    width: 33%;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+h1,h3 {
+    font-family: "Google Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+    "GRAD" 0;
+
+}
+
+.material-symbols-outlined{
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+
+}
+
+#principal{
+    width: 80%;
+
+}
+
+#menu{
+    width: 20%;
+
+}
+
+#menu ul{
+    flex-direction: column;
+
+}
+
+#menu h3{
+    text-align: center;
+
+}
+
+header h1{
+    width: 80%;
+    text-align: center;
+
+}
+
+.cuaternario {
+    display: flex;
+    color:#6076f7;
+    flex-direction: row;
+
+}
+
+.cuaternario .texto{
+    width: 33%;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+
+}
+
+#tarjeta p{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    text-align: left;
+
+}
+
+#tarjeta img{
+    width: 40%;
+
+}
+
+#enlaces img{
+    width: 25%;
+
+}
+
+#foto img{
+    width: 100%;
+
+}
+
+#opciones{
+    width: 50%;
+
+}
+
+#opciones ul{
+    flex-direction: row-reverse;
+
+}
+
+#enlace{
+    width: 30%;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+#contacto{
+    width: 20%;
+
+}
