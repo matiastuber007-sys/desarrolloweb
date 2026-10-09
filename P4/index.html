@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--First Mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Josué Matías Navarro Vargas">
+    <meta name="keywords" content="curriculum, desarrollo web, desarrollo movil, bootstrap">
+    <!-- Bootstrap CSS y JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!--icono-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!--Fuentes-->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Vínculo a estilos-->
+    <link rel="stylesheet" href="css/estilo.css"/>
+
+    <title>Josué Navarro | Curriculum</title>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#collapsibleNavbar" data-bs-offset="100">
+
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-grafito navbar-dark fixed-top border-bottom border-papaya">
+            <div class="container">
+                <a class="navbar-brand titulo text-papaya fs-2" href="#inicio">JMNV</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobremi">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experiencia">Experiencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#proyectos">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#habilidades">Habilidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#educacion">Educación</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modalContacto">
+                                <span class="material-symbols-outlined">
+                                    mail
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Inicio / hero -->
+        <section id="inicio" class="container py-5">
+            <article class="row align-items-center g-5 pt-5 mt-4">
+                <section class="col-12 col-lg-6">
+                    <p class="text-papaya fs-5 mb-1">Hola, soy</p>
+                    <h1 class="nombre mb-3">Josué Matías<br><span class="text-papaya">Navarro Vargas</span></h1>
+                    <p class="lead mb-4">Estudiante de Desarrollo de Software Multiplataforma | Desarrollador Web y Móvil en formación.</p>
+                    <p class="mb-4">
+                        <span class="badge text-bg-dark border border-papaya p-2 me-2 mb-2">
+                            <span class="material-symbols-outlined align-middle fs-6">location_on</span> León, Gto.
+                        </span>
+                        <span class="badge text-bg-dark border border-papaya p-2 me-2 mb-2">
+                            <span class="material-symbols-outlined align-middle fs-6">school</span> UTL · LDSM405
+                        </span>
+                    </p>
+                    <a href="#proyectos" class="btn btn-papaya btn-lg me-2 mb-2">Ver proyectos</a>
+                    <button type="button" class="btn btn-outline-light btn-lg mb-2" data-bs-toggle="modal" data-bs-target="#modalContacto">Contáctame</button>
+                </section>
+                <section class="col-12 col-lg-6">
+                    <article id="demo" class="carousel slide border border-papaya rounded-4 overflow-hidden" data-bs-ride="carousel">
+
+                        <!-- Indicators/dots -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                        </div>
+
+                        <!-- The slideshow/carousel -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/carrusel1.svg" alt="Desarrollo web" class="d-block w-100 img-fluid">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/carrusel2.svg" alt="Desarrollo movil" class="d-block w-100 img-fluid">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/carrusel3.svg" alt="Bases de datos" class="d-block w-100 img-fluid">
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls/icons -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </article>
+                </section>
+            </article>
+        </section>
+
+        <!-- Sobre mi -->
+        <section id="sobremi" class="container-fluid bg-grafito py-5">
+            <article class="container">
+                <h2 class="text-center display-4 mb-5">Sobre <span class="text-papaya">mí</span></h2>
+                <section class="row align-items-center g-4">
+                    <article class="col-12 col-md-4 text-center">
+                        <img src="img/perfil.svg" alt="Foto de perfil" class="img-fluid rounded-circle border border-4 border-papaya foto-perfil">
+                    </article>
+                    <article class="col-12 col-md-8">
+                        <p class="fs-5 mb-4">Soy estudiante de Desarrollo de Software Multiplataforma en la Universidad Tecnológica de León. Me apasiona la creación de soluciones digitales, el desarrollo web y móvil, y el modelado de bases de datos. Combino la disciplina y el enfoque analítico con el aprendizaje autodidacta constante, buscando siempre escribir código limpio, funcional y con una experiencia visual sólida.</p>
+                        <section class="row g-3">
+                            <article class="col-6 col-lg-3">
+                                <p class="dato p-3 mb-0 rounded-3 text-center"><span class="material-symbols-outlined text-papaya">school</span><br>4.° cuatrimestre</p>
+                            </article>
+                            <article class="col-6 col-lg-3">
+                                <p class="dato p-3 mb-0 rounded-3 text-center"><span class="material-symbols-outlined text-papaya">location_on</span><br>León, Guanajuato</p>
+                            </article>
+                            <article class="col-6 col-lg-3">
+                                <p class="dato p-3 mb-0 rounded-3 text-center"><span class="material-symbols-outlined text-papaya">translate</span><br>Español · Inglés B1</p>
+                            </article>
+                            <article class="col-6 col-lg-3">
+                                <p class="dato p-3 mb-0 rounded-3 text-center"><span class="material-symbols-outlined text-papaya">sports_motorsports</span><br>Fan de la F1</p>
+                            </article>
+                        </section>
+                    </article>
+                </section>
+            </article>
+        </section>
+
+        <!-- Experiencia -->
+        <section id="experiencia" class="container py-5">
+            <h2 class="text-center display-4 mb-5"><span class="text-papaya">Experiencia</span></h2>
+            <section class="row g-4">
+                <article class="col-12 col-md-6">
+                    <div class="card h-100 border-0 border-start border-5 border-papaya bg-grafito p-3">
+                        <div class="card-body">
+                            <span class="badge btn-papaya mb-2">2026 – Presente</span>
+                            <h4 class="card-title">MATIX Corporation</h4>
+                            <h6 class="card-subtitle mb-3 text-body-secondary">Iniciativa de Desarrollo de Software · Desarrollador independiente</h6>
+                            <p class="card-text">Conceptualización, arquitectura y programación de aplicaciones web y móviles multiplataforma.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6">
+                    <div class="card h-100 border-0 border-start border-5 border-papaya bg-grafito p-3">
+                        <div class="card-body">
+                            <span class="badge btn-papaya mb-2">2025 – Presente</span>
+                            <h4 class="card-title">Universidad Tecnológica de León</h4>
+                            <h6 class="card-subtitle mb-3 text-body-secondary">Proyectos Integradores Académicos · Desarrollador en formación</h6>
+                            <p class="card-text">Maquetación de interfaces responsivas, consumo de APIs, diseño y normalización de bases de datos relacionales en MySQL y trabajo en equipo con Git.</p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </section>
+
+        <!-- Proyectos -->
+        <section id="proyectos" class="container-fluid bg-grafito py-5">
+            <article class="container">
+                <h2 class="text-center display-4 mb-5"><span class="text-papaya">Proyectos</span></h2>
+                <section class="row g-4">
+                    <article class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 border border-papaya">
+                            <img class="card-img-top img-fluid" src="img/proyecto_tlaloc.svg" alt="Proyecto Tlaloc">
+                            <div class="card-body">
+                                <h4 class="card-title">Proyecto Tláloc</h4>
+                                <p class="card-text">App móvil multiplataforma para el cuidado inteligente de plantas.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 pb-3">
+                                <button type="button" class="btn btn-papaya w-100" data-bs-toggle="modal" data-bs-target="#modalTlaloc">Ver más</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 border border-papaya">
+                            <img class="card-img-top img-fluid" src="img/proyecto_f1.jpg" alt="Formularios F1">
+                            <div class="card-body">
+                                <h4 class="card-title">Formularios F1</h4>
+                                <p class="card-text">Formularios temáticos con estética de automovilismo y validación web.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 pb-3">
+                                <button type="button" class="btn btn-papaya w-100" data-bs-toggle="modal" data-bs-target="#modalF1">Ver más</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 border border-papaya">
+                            <img class="card-img-top img-fluid" src="img/proyecto_marconi.jpg" alt="Portal Marconi">
+                            <div class="card-body">
+                                <h4 class="card-title">Portal Marconi / MATIX</h4>
+                                <p class="card-text">Sitio web conceptual informativo con semántica estructurada.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 pb-3">
+                                <button type="button" class="btn btn-papaya w-100" data-bs-toggle="modal" data-bs-target="#modalMarconi">Ver más</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 border border-papaya">
+                            <img class="card-img-top img-fluid" src="img/proyecto_bootstrap.jpg" alt="Gestion academica">
+                            <div class="card-body">
+                                <h4 class="card-title">Gestión Académica</h4>
+                                <p class="card-text">Interfaz administrativa responsiva para alumnos, profesores y administradores.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 pb-3">
+                                <button type="button" class="btn btn-papaya w-100" data-bs-toggle="modal" data-bs-target="#modalBootstrap">Ver más</button>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </article>
+        </section>
+
+        <!-- Habilidades -->
+        <section id="habilidades" class="container py-5">
+            <h2 class="text-center display-4 mb-5"><span class="text-papaya">Habilidades</span></h2>
+            <section class="row g-5">
+                <article class="col-12 col-lg-6">
+                    <h4 class="mb-4"><span class="material-symbols-outlined text-papaya align-middle">code</span> Lenguajes y herramientas</h4>
+                    <p class="mb-1">HTML5 &amp; CSS3</p>
+                    <div class="progress mb-3"><div class="progress-bar" style="width:80%">4/5</div></div>
+                    <p class="mb-1">Bootstrap 5</p>
+                    <div class="progress mb-3"><div class="progress-bar" style="width:80%">4/5</div></div>
+                    <p class="mb-1">MySQL &amp; Bases de Datos</p>
+                    <div class="progress mb-3"><div class="progress-bar" style="width:80%">4/5</div></div>
+                    <p class="mb-1">Java / Kotlin (Android)</p>
+                    <div class="progress mb-3"><div class="progress-bar" style="width:80%">4/5</div></div>
+                    <p class="mb-1">Git &amp; GitHub</p>
+                    <div class="progress mb-3"><div class="progress-bar" style="width:80%">4/5</div></div>
+                </article>
+                <article class="col-12 col-lg-6">
+                    <h4 class="mb-4 invisible d-none d-lg-block">.</h4>
+                    <p class="mb-1">JavaScript</p>
+                    <div class="progress mb-3"><div class="progress-bar" style="width:70%">3.5/5</div></div>
+                    <p class="mb-1">React Native &amp; Expo</p>
+                    <div class="progress mb-3"><div class="progress-bar" style="width:70%">3.5/5</div></div>
+                    <p class="mb-1">C / C++</p>
+                    <div class="progress mb-3"><div class="progress-bar" style="width:70%">3.5/5</div></div>
+                    <p class="mb-1">Linux (CLI) &amp; Fundamentos de Redes</p>
+                    <div class="progress mb-3"><div class="progress-bar" style="width:70%">3.5/5</div></div>
+                    <p class="mb-1">Figma / Prototipado</p>
+                    <div class="progress mb-3"><div class="progress-bar" style="width:70%">3.5/5</div></div>
+                </article>
+                <article class="col-12 col-md-6">
+                    <h4 class="mb-3"><span class="material-symbols-outlined text-papaya align-middle">translate</span> Idiomas</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between">Español <span class="badge btn-papaya">Nativo</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Inglés (técnico, documentación) <span class="badge btn-papaya">B1</span></li>
+                    </ul>
+                </article>
+                <article class="col-12 col-md-6">
+                    <h4 class="mb-3"><span class="material-symbols-outlined text-papaya align-middle">psychology</span> Habilidades blandas</h4>
+                    <span class="badge rounded-pill text-bg-dark border border-papaya p-2 mb-2">Pensamiento analítico</span>
+                    <span class="badge rounded-pill text-bg-dark border border-papaya p-2 mb-2">Resolución de problemas</span>
+                    <span class="badge rounded-pill text-bg-dark border border-papaya p-2 mb-2">Trabajo colaborativo</span>
+                    <span class="badge rounded-pill text-bg-dark border border-papaya p-2 mb-2">Adaptabilidad</span>
+                    <span class="badge rounded-pill text-bg-dark border border-papaya p-2 mb-2">Autonomía y constancia</span>
+                    <span class="badge rounded-pill text-bg-dark border border-papaya p-2 mb-2">Atención al detalle</span>
+                </article>
+            </section>
+        </section>
+
+        <!-- Educacion y extras -->
+        <section id="educacion" class="container-fluid bg-grafito py-5">
+            <article class="container">
+                <h2 class="text-center display-4 mb-5"><span class="text-papaya">Educación</span> y extras</h2>
+                <section class="row g-4 mb-5">
+                    <article class="col-12 col-md-6">
+                        <div class="card h-100 border border-papaya">
+                            <div class="card-body">
+                                <span class="material-symbols-outlined text-papaya fs-1">school</span>
+                                <h4 class="card-title">TSU en Desarrollo de Software Multiplataforma</h4>
+                                <p class="card-text mb-1">Universidad Tecnológica de León (UTL)</p>
+                                <p class="card-text text-body-secondary">2024 – En curso · 4.° cuatrimestre</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-6">
+                        <div class="card h-100 border border-papaya">
+                            <div class="card-body">
+                                <span class="material-symbols-outlined text-papaya fs-1">menu_book</span>
+                                <h4 class="card-title">Educación Media Superior</h4>
+                                <p class="card-text mb-1">Bachillerato</p>
+                                <p class="card-text text-body-secondary">Concluido</p>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <h3 class="text-center mb-4">Cuando no estoy programando...</h3>
+                <section class="row g-4 text-center">
+                    <article class="col-12 col-md-4">
+                        <p class="dato p-4 rounded-3 h-100 mb-0"><span class="material-symbols-outlined text-papaya fs-1">sports_motorsports</span><br><strong>Fórmula 1</strong><br>Ingeniería y competencia del automovilismo.</p>
+                    </article>
+                    <article class="col-12 col-md-4">
+                        <p class="dato p-4 rounded-3 h-100 mb-0"><span class="material-symbols-outlined text-papaya fs-1">directions_run</span><br><strong>Atletismo</strong><br>Fondismo y carreras de 21 km.</p>
+                    </article>
+                    <article class="col-12 col-md-4">
+                        <p class="dato p-4 rounded-3 h-100 mb-0"><span class="material-symbols-outlined text-papaya fs-1">music_note</span><br><strong>Música</strong><br>Producción musical digital y guitarra.</p>
+                    </article>
+                </section>
+            </article>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto" class="container py-5 text-center">
+            <h2 class="display-4 mb-3">¿Trabajamos <span class="text-papaya">juntos?</span></h2>
+            <p class="lead mb-4">Estoy abierto a proyectos, prácticas y nuevas ideas.</p>
+            <button type="button" class="btn btn-papaya btn-lg me-2 mb-2" data-bs-toggle="modal" data-bs-target="#modalContacto">
+                <span class="material-symbols-outlined align-middle">mail</span> Enviar mensaje
+            </button>
+            <a href="https://github.com/matiastuber007-sys" target="_blank" class="btn btn-outline-light btn-lg mb-2">
+                <span class="material-symbols-outlined align-middle">code</span> GitHub
+            </a>
+        </section>
+    </main>
+
+    <footer class="container-fluid p-4 bg-grafito text-center border-top border-papaya">
+        <p class="mb-1">Josué Matías Navarro Vargas · LDSM405 · UTL</p>
+        <a class="nav-link text-papaya" href="#inicio">
+            <span class="material-symbols-outlined">
+                arrow_warm_up
+            </span>
+        </a>
+    </footer>
+
+    <!-- The Modal Contacto -->
+    <div class="modal fade" id="modalContacto">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-papaya">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Contáctame</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label for="correo" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="correo" placeholder="nombre@ejemplo.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-papaya" onclick="mi_metodo()">Enviar</button>
+                    </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal Tlaloc -->
+    <div class="modal fade" id="modalTlaloc">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-papaya">
+                <div class="modal-header">
+                    <h4 class="modal-title">Proyecto Tláloc</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/proyecto_tlaloc.svg" alt="Proyecto Tlaloc" class="img-fluid rounded mb-3">
+                    <p>Aplicación móvil multiplataforma para el cuidado inteligente de plantas.</p>
+                    <span class="badge btn-papaya">React Native</span>
+                    <span class="badge btn-papaya">Expo</span>
+                    <span class="badge btn-papaya">Firebase</span>
+                    <span class="badge btn-papaya">JavaScript</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal F1 -->
+    <div class="modal fade" id="modalF1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-papaya">
+                <div class="modal-header">
+                    <h4 class="modal-title">Formularios F1 &amp; Validación Web</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/proyecto_f1.jpg" alt="Formularios F1" class="img-fluid rounded mb-3">
+                    <p>Formularios temáticos con estética de automovilismo, validaciones interactivas y estilos adaptables.</p>
+                    <span class="badge btn-papaya">HTML5</span>
+                    <span class="badge btn-papaya">CSS3</span>
+                    <span class="badge btn-papaya">JavaScript</span>
+                </div>
+                <div class="modal-footer">
+                    <a href="../formulario_1/index.html" target="_blank" class="btn btn-papaya">Ver proyecto</a>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal Marconi -->
+    <div class="modal fade" id="modalMarconi">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-papaya">
+                <div class="modal-header">
+                    <h4 class="modal-title">Portal Marconi / MATIX</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/proyecto_marconi.jpg" alt="Portal Marconi" class="img-fluid rounded mb-3">
+                    <p>Sitio web conceptual informativo con semántica estructurada y diseño moderno (Práctica Unidad 1).</p>
+                    <span class="badge btn-papaya">HTML5 semántico</span>
+                    <span class="badge btn-papaya">CSS3</span>
+                </div>
+                <div class="modal-footer">
+                    <a href="../Unidad1/P1/index.html" target="_blank" class="btn btn-papaya">Ver proyecto</a>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal Bootstrap -->
+    <div class="modal fade" id="modalBootstrap">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-papaya">
+                <div class="modal-header">
+                    <h4 class="modal-title">Plataforma de Gestión Académica</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/proyecto_bootstrap.jpg" alt="Gestion academica" class="img-fluid rounded mb-3">
+                    <p>Interfaz administrativa responsiva con vistas para Alumnos, Profesores y Administradores (Práctica Bootstrap P3).</p>
+                    <span class="badge btn-papaya">Bootstrap 5.3</span>
+                    <span class="badge btn-papaya">Modales</span>
+                    <span class="badge btn-papaya">Grid System</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/funcionalidad.js"></script>
+</body>
+</html>

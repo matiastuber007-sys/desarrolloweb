@@ -1,0 +1,74 @@
+/*Estilos básicos*/
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #121212;
+    font-family: "Roboto Condensed", sans-serif;
+}
+section[id]{
+    scroll-margin-top: 70px;
+}
+h1, h2, h3, .titulo{
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1px;
+}
+
+/*Colores McLaren*/
+.text-papaya{
+    color: #ff8000;
+}
+.bg-grafito{
+    background-color: #1e1e1e;
+}
+.border-papaya{
+    border-color: #ff8000 !important;
+}
+.btn-papaya{
+    background-color: #ff8000;
+    color: #121212;
+    font-weight: bold;
+    border: none;
+}
+.btn-papaya:hover{
+    background-color: #ffffff;
+    color: #121212;
+}
+
+/*Menu*/
+.navbar .nav-link.active, .navbar .nav-link:hover{
+    color: #ff8000;
+}
+
+/*Inicio*/
+.nombre{
+    font-size: 4.5rem;
+    line-height: 1;
+}
+
+/*Sobre mi*/
+.foto-perfil{
+    max-width: 280px;
+}
+.dato{
+    background-color: #121212;
+    border-bottom: 3px solid #ff8000;
+}
+
+/*Tarjetas*/
+.card{
+    transition: transform 0.3s;
+}
+.card:hover{
+    transform: translateY(-8px);
+}
+
+/*Habilidades*/
+.progress{
+    height: 22px;
+}
+.progress-bar{
+    background-color: #ff8000;
+    color: #121212;
+    font-weight: bold;
+}
