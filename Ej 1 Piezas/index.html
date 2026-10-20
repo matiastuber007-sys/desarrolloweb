@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Anahí Torres">
+    <meta keywords="desarrollo web, ingeniería de software">
+    <!--Vínculo a estilos-->
+    <link rel="stylesheet" href="css/estilo.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Piezas</title>
+
+</head>
+<body>
+        <main>
+            <section id="principal">
+                <article>
+                  <form name= "datos_piezas" method= "post" action= "#" enctype="multipart/form-data">
+                    <fieldset id="pzs">
+                        <legend>Piezas</legend>
+                        <p>
+                            <label>No Piezas:</label>
+                            <input type="number" id="nopzs" min="1"/> <br>
+                        </p>
+                        <p>
+                            <label>Precio:</label>
+                            $ <input type="number" id="precio" min="0"/> <br>
+                        </p>
+
+                        <p id="dguardar">
+                            <button type="button" id="boton" onclick="mi_metodo()" ><span class="material-symbols-outlined">calculate</span> Calcular</button>
+                        </p>
+
+                        <p id="nota">
+                            Si hay 10 piezas o más se aplica 35% de descuento.
+                        </p>
+
+                        <p id="resultado">
+                            R: <span id="total">______</span> precio con descuento
+                        </p>
+
+                    </fieldset>
+                  </form>
+                </article>
+            </section>
+        </main>
+        
+        <footer>
+            <article id="grupo" class="pie"><span class="material-symbols-outlined">groups</span> LDSM405</article>
+            <article id="contacto" class="pie">
+                <span class="material-symbols-outlined">person</span> <i>Josue Matias Navarro Vargas</i>
+            </article>
+        </footer>
+      <script src="js/script.js"></script>
+</body>
+</html>

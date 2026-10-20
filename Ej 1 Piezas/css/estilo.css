@@ -1,0 +1,91 @@
+/*Estilos básicos*/
+body{
+    background-color:#f2f2f2;
+    font-family: "Roboto Condensed", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex: 1;
+}
+.material-symbols-outlined{
+    vertical-align: middle;
+}
+footer{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e1e;
+    border-top: 6px solid #ff8000;
+    padding: 20px 40px;
+}
+.pie{
+    color: #ff8000;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*Estilos para el formulario*/
+legend{
+    font-family: "Bebas Neue",sans-serif ;
+    font-size: 50px;
+    color: #ff8000;
+    padding: 0 10px;
+}
+
+fieldset{
+    border: #ff8000 2px dotted;
+    margin: 20px;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label{
+    font-size: 22px;
+    font-weight: bolder;
+    display: inline-block;
+    width: 130px;
+}
+
+input{
+    width: 250px;
+    height: 35px;
+    font-size: 20px;
+    border: 2px solid #1e1e1e;
+    border-radius: 5px;
+}
+
+#boton{
+    width: 180px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color:#ff8000;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#boton:hover{
+    background-color:#1e1e1e;
+    color: #ff8000;
+}
+
+#nota{
+    color: #555555;
+}
+
+#resultado{
+    font-size: 26px;
+}
+
+#total{
+    color: #ff8000;
+    font-weight: bold;
+}
