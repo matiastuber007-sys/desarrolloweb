@@ -8,6 +8,6 @@ function mi_metodo(){
         total = total - (total * 0.35);
     }
 
-    document.getElementById('total').innerHTML = "$" + total.toFixed(2);
+    document.getElementById('total').innerHTML = "$" + total;
 
 }

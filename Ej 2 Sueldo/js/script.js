@@ -1,5 +1,5 @@
 function mi_metodo(){
-    var sueldo = document.getElementById('sueldo').value;
+    var sueldo = Number(document.getElementById('sueldo').value);
     var categoria = document.getElementById('categoria').value;
 
     var porcentaje = 0;
@@ -17,8 +17,8 @@ function mi_metodo(){
         porcentaje = 0.35;
     }
 
-    var total = sueldo * 1 + (sueldo * porcentaje);
+    var total = sueldo + (sueldo * porcentaje);
 
-    document.getElementById('total').innerHTML = "$" + total.toFixed(2);
+    document.getElementById('total').innerHTML = "$" + total;
 
 }
