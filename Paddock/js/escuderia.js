@@ -16,6 +16,10 @@ window.onload = function () {
 async function obtenerEscuderiasApi() {
   try {
     var respuesta = await fetch(URL_OPENF1 + "/drivers?session_key=latest");
+    if (!respuesta.ok) {
+      document.getElementById("cargando").innerText = "OpenF1 está ocupado, recarga la página en unos segundos";
+      return;
+    }
     var pilotos = await respuesta.json();
     listaEscuderias = obtenerEscuderias(pilotos);
     mostrarEscuderias();

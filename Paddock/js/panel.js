@@ -77,6 +77,10 @@ function mostrarEscuderiaFavorita() {
 async function obtenerPilotos() {
   try {
     var respuesta = await fetch(URL_OPENF1 + "/drivers?session_key=latest");
+    if (!respuesta.ok) {
+      document.getElementById("cargandoPilotos").innerText = "OpenF1 está ocupado, recarga la página en unos segundos";
+      return;
+    }
     listaPilotos = await respuesta.json();
     listaEscuderias = obtenerEscuderias(listaPilotos);
     document.getElementById("totalPilotos").innerText = listaPilotos.length;
@@ -91,6 +95,10 @@ async function obtenerPilotos() {
 async function obtenerCarreras() {
   try {
     var respuesta = await fetch(URL_OPENF1 + "/meetings?year=2026");
+    if (!respuesta.ok) {
+      document.getElementById("cargandoCarreras").innerText = "OpenF1 está ocupado, recarga la página en unos segundos";
+      return;
+    }
     var datos = await respuesta.json();
 
     // Quitamos las pruebas de pretemporada, solo dejamos los Grandes Premios
