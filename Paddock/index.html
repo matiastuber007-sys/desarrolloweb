@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paddock | Iniciar Sesión</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+  <div class="container-fluid">
+    <div class="row min-vh-100">
+
+      <!-- Lado izquierdo: presentación -->
+      <div class="col-lg-6 login-lado d-none d-lg-flex flex-column justify-content-between p-5">
+        <span class="logo-paddock">PADDOCK<span style="color:#fff">.</span></span>
+        <div>
+          <p class="etiqueta" style="color:#fff">Temporada 2026</p>
+          <h1 class="titulo display-3 text-white">Tu entrada al<br>mundo de la F1.</h1>
+          <p class="fs-5 text-white-50 mt-3" style="max-width: 460px;">
+            Conoce a los pilotos, las escuderías y cada Gran Premio.
+            Arma tu lista y empieza a vivir las carreras.
+          </p>
+        </div>
+        <span class="small text-white-50">Datos en vivo de OpenF1</span>
+      </div>
+
+      <!-- Lado derecho: formulario -->
+      <div class="col-lg-6 d-flex align-items-center justify-content-center p-4 fondo-equipo">
+        <div style="width: 100%; max-width: 400px;">
+
+          <span class="logo-paddock d-lg-none">PADDOCK<span>.</span></span>
+
+          <p class="etiqueta mt-4"><span class="franja"></span>Bienvenido</p>
+          <h2 class="titulo display-6 mb-2">Inicia sesión</h2>
+          <p class="texto-gris mb-4">Entra para armar tu lista de seguimiento.</p>
+
+          <form id="formLogin">
+            <div class="mb-3">
+              <label for="usuario" class="form-label small texto-gris">Usuario</label>
+              <input type="text" class="form-control campo" id="usuario" placeholder="emilys" required>
+            </div>
+
+            <div class="mb-4">
+              <label for="contrasena" class="form-label small texto-gris">Contraseña</label>
+              <input type="password" class="form-control campo" id="contrasena" placeholder="••••••••" required>
+            </div>
+
+            <div class="d-grid">
+              <button type="button" class="btn btn-equipo btn-lg" onclick="iniciarSesion();">Entrar al paddock</button>
+            </div>
+          </form>
+
+          <p id="errorLogin" class="mensaje text-danger mt-3"></p>
+
+          <div class="tarjeta p-3 small texto-gris">
+            Usuario de prueba: <strong class="text-white">emilys</strong> /
+            <strong class="text-white">emilyspass</strong>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

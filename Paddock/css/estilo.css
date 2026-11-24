@@ -1,0 +1,266 @@
+/* =========================================================
+   PADDOCK - Estilos generales
+   --equipo es el color de la escudería elegida.
+   Por defecto es el rojo de la F1 y desde JS lo cambiamos.
+   ========================================================= */
+:root {
+  --equipo: #e10600;
+  --fondo: #0b0b0e;
+  --tarjeta: #15151a;
+  --borde: #26262e;
+  --texto: #f2f2f5;
+  --gris: #8b8b97;
+}
+
+body {
+  background-color: var(--fondo);
+  color: var(--texto);
+  font-family: "Titillium Web", system-ui, sans-serif;
+  min-height: 100vh;
+}
+
+/* Brillo de color del equipo al fondo de la página */
+.fondo-equipo {
+  background:
+    radial-gradient(ellipse 80% 50% at 85% -10%, color-mix(in srgb, var(--equipo) 35%, transparent), transparent 70%),
+    radial-gradient(ellipse 60% 40% at -10% 110%, color-mix(in srgb, var(--equipo) 18%, transparent), transparent 70%),
+    var(--fondo);
+  background-attachment: fixed;
+}
+
+.texto-gris { color: var(--gris); }
+.texto-equipo { color: var(--equipo); }
+
+.titulo {
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.etiqueta {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--equipo);
+}
+
+/* Franja diagonal estilo F1 */
+.franja {
+  display: inline-block;
+  width: 42px;
+  height: 6px;
+  background: var(--equipo);
+  transform: skewX(-30deg);
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* ---------- Tarjetas ---------- */
+.tarjeta {
+  background: color-mix(in srgb, var(--tarjeta) 85%, transparent);
+  border: 1px solid var(--borde);
+  border-radius: 1.25rem;
+  backdrop-filter: blur(10px);
+}
+
+.tarjeta-hover {
+  transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
+}
+.tarjeta-hover:hover {
+  transform: translateY(-4px);
+  border-color: color-mix(in srgb, var(--equipo) 60%, transparent);
+  box-shadow: 0 12px 40px color-mix(in srgb, var(--equipo) 20%, transparent);
+}
+
+/* ---------- Botones ---------- */
+.btn-equipo {
+  background: var(--equipo);
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+  border-radius: 999px;
+  padding: 0.7rem 1.6rem;
+  transition: filter 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+.btn-equipo:hover {
+  color: #fff;
+  filter: brightness(1.12);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px color-mix(in srgb, var(--equipo) 45%, transparent);
+}
+
+.btn-contorno {
+  background: transparent;
+  border: 1px solid color-mix(in srgb, var(--equipo) 70%, transparent);
+  color: var(--texto);
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 0.35rem 1rem;
+  font-size: 0.85rem;
+  transition: background 0.2s;
+}
+.btn-contorno:hover {
+  background: color-mix(in srgb, var(--equipo) 25%, transparent);
+  color: #fff;
+}
+
+/* Cuando ya lo sigues */
+.btn-siguiendo {
+  background: color-mix(in srgb, var(--equipo) 30%, transparent);
+  border: 1px solid var(--equipo);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 0.35rem 1rem;
+  font-size: 0.85rem;
+  cursor: default;
+}
+
+/* ---------- Formularios ---------- */
+.campo {
+  background: #0f0f13 !important;
+  border: 1px solid var(--borde) !important;
+  color: var(--texto) !important;
+  border-radius: 0.8rem !important;
+  padding: 0.75rem 1rem !important;
+}
+.campo::placeholder { color: #55555f; }
+.campo:focus {
+  border-color: var(--equipo) !important;
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--equipo) 22%, transparent) !important;
+}
+.campo option { background: #15151a; }
+
+.form-check-input:checked {
+  background-color: var(--equipo);
+  border-color: var(--equipo);
+}
+
+/* ---------- Navbar ---------- */
+.barra {
+  background: color-mix(in srgb, var(--fondo) 75%, transparent);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--borde);
+}
+.barra .nav-link {
+  color: var(--gris);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.barra .nav-link:hover { color: #fff; }
+
+.logo-paddock {
+  font-weight: 900;
+  font-size: 1.4rem;
+  letter-spacing: 0.04em;
+  color: #fff;
+  text-decoration: none;
+}
+.logo-paddock span { color: var(--equipo); }
+
+/* ---------- Login ---------- */
+.login-lado {
+  background:
+    linear-gradient(160deg, rgba(225, 6, 0, 0.85), rgba(80, 0, 0, 0.9)),
+    url("https://media.formula1.com/image/upload/c_lfill,w_1600/q_auto/v1740000001/common/f1/2026/ferrari/2026ferraricarright.webp") center / cover no-repeat;
+}
+
+/* ---------- Escudería (selección) ---------- */
+.tarjeta-escuderia {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  min-height: 210px;
+}
+.tarjeta-escuderia .auto {
+  position: absolute;
+  right: -30px;
+  bottom: 8px;
+  width: 78%;
+  opacity: 0.9;
+  transition: transform 0.4s;
+}
+.tarjeta-escuderia:hover .auto { transform: translateX(-14px); }
+.tarjeta-escuderia .logo { height: 44px; }
+
+/* ---------- Panel ---------- */
+.hero {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.75rem;
+  background:
+    linear-gradient(120deg, color-mix(in srgb, var(--equipo) 55%, #000) 0%, #0d0d10 70%);
+  border: 1px solid color-mix(in srgb, var(--equipo) 40%, transparent);
+}
+.hero .auto-hero {
+  position: absolute;
+  right: -40px;
+  bottom: -10px;
+  width: 58%;
+  max-width: 760px;
+}
+.numero-grande {
+  font-size: 2.6rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.foto-piloto {
+  height: 150px;
+  object-fit: contain;
+  object-position: bottom;
+}
+.numero-piloto {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  font-size: 3rem;
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.25);
+}
+
+.bandera {
+  width: 46px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Tabla oscura de "Mi lista" */
+.tabla-lista {
+  --bs-table-bg: transparent;
+  --bs-table-color: var(--texto);
+  --bs-table-hover-bg: color-mix(in srgb, var(--equipo) 10%, transparent);
+  --bs-table-hover-color: #fff;
+  --bs-table-border-color: var(--borde);
+}
+.tabla-lista thead th {
+  color: var(--gris);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.chip {
+  display: inline-block;
+  padding: 0.2rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: color-mix(in srgb, var(--equipo) 20%, transparent);
+  color: #fff;
+  border: 1px solid color-mix(in srgb, var(--equipo) 50%, transparent);
+}
+
+.mensaje {
+  min-height: 1.5rem;
+  font-weight: 600;
+}
+
+html { scroll-behavior: smooth; }
+section { scroll-margin-top: 90px; }
